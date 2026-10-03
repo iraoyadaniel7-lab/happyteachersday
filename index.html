@@ -1,0 +1,1323 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b1b">
+<meta name="description" content="A heartfelt Teachers' Day tribute to Mr James Nwanlozie of Goldenline School, made with appreciation by Daniel Iraoya and Precious Mmemme.">
+<title>Happy Teachers' Day, Mr James Nwanlozie! | Goldenline School</title>
+
+<style>
+/* =================================
+   GOLDENLINE SCHOOL - TEACHERS' DAY
+   HTML + CSS + JAVASCRIPT
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #080b1b;
+    --card: rgba(255,255,255,0.055);
+    --purple: #a16bff;
+    --cyan: #39e7ff;
+    --white: #f7f6ff;
+    --muted: #bdc1d9;
+    --green: #42e8a0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    overflow-x: hidden;
+    line-height: 1.75;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(ellipse at 10% 10%, #7135d52b, transparent 40%),
+        radial-gradient(ellipse at 90% 55%, #00bde322, transparent 40%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+button, a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    transition: transform .25s ease,
+                box-shadow .25s ease,
+                background .25s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--cyan);
+    outline-offset: 5px;
+}
+
+a {
+    color: inherit;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8%;
+    border-bottom: 1px solid #ffffff12;
+    background: #080b1beF;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(16px);
+}
+
+.logo {
+    font-size: 1.12rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--cyan);
+}
+
+nav .links {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: #d5d7eb;
+    text-decoration: none;
+    font-size: .9rem;
+    transition: color .25s;
+}
+
+nav a:hover {
+    color: var(--cyan);
+}
+
+/* HERO */
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 90px 8%;
+    position: relative;
+    isolation: isolate;
+}
+
+.badge {
+    border: 1px solid #a16bff80;
+    color: #dfcaff;
+    padding: 7px 18px;
+    border-radius: 50px;
+    background: #a16bff16;
+    font-size: .82rem;
+    letter-spacing: .6px;
+    margin-bottom: 28px;
+    animation: fadeIn 1s ease;
+}
+
+.hero h1 {
+    font-size: clamp(2.6rem, 7.3vw, 5.6rem);
+    line-height: 1.13;
+    max-width: 1050px;
+    letter-spacing: -2px;
+}
+
+.gradient-text {
+    background: linear-gradient(
+        100deg, #c7a6ff, #39e7ff, #c7a6ff
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 5s linear infinite;
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 720px;
+    margin: 27px 0 32px;
+    font-size: 1.08rem;
+}
+
+.school-tag {
+    color: var(--cyan);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin-top: 23px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.floating {
+    position: absolute;
+    color: #b18aff;
+    font-size: 2.5rem;
+    opacity: .35;
+    pointer-events: none;
+    animation: float 5s ease-in-out infinite;
+}
+
+.f1 { top: 17%; left: 10%; }
+.f2 { top: 27%; right: 12%; animation-delay: 1s; }
+.f3 { bottom: 17%; left: 16%; animation-delay: 2s; }
+.f4 { bottom: 20%; right: 15%; animation-delay: .5s; }
+
+/* BUTTONS */
+
+.btn {
+    padding: 13px 23px;
+    border-radius: 12px;
+    font-weight: 750;
+    font-size: .94rem;
+}
+
+.btn-primary {
+    color: #080b1b;
+    background: linear-gradient(110deg, #c2a0ff, #39e7ff);
+    box-shadow: 0 0 26px #9b5cff27;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 35px #39e7ff55;
+}
+
+.btn-outline {
+    color: white;
+    background: transparent;
+    border: 1px solid #ffffff35;
+}
+
+.btn-outline:hover {
+    border-color: var(--cyan);
+    background: #39e7ff0b;
+}
+
+/* SECTIONS */
+
+section.content {
+    padding: 95px 8%;
+    max-width: 1450px;
+    margin: auto;
+    scroll-margin-top: 80px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.eyebrow {
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: .76rem;
+    font-weight: 800;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    line-height: 1.25;
+    margin-top: 10px;
+}
+
+.section-heading p {
+    color: var(--muted);
+    max-width: 650px;
+    margin: 13px auto 0;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid #ffffff13;
+    border-radius: 22px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    transition: border-color .3s, transform .3s, box-shadow .3s;
+}
+
+.card:hover {
+    border-color: #a16bff75;
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px #00000025;
+}
+
+/* TEACHER APPRECIATION */
+
+.appreciation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 23px;
+}
+
+.big-icon {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    margin-bottom: 13px;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--muted);
+}
+
+.full-card {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.surprise {
+    display: none;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #a16bff15, #39e7ff0c);
+    border: 1px solid #a16bff60;
+    text-align: left;
+}
+
+.surprise.show {
+    display: block;
+    animation: fadeIn .5s ease;
+}
+
+.surprise h3 {
+    color: #d9c3ff;
+}
+
+/* SPECIAL QUOTE */
+
+.quote-card {
+    margin-top: 24px;
+    text-align: center;
+    padding: 35px;
+    border: 1px solid #39e7ff30;
+    border-radius: 22px;
+    background: #39e7ff07;
+}
+
+.quote-card .quote-mark {
+    color: var(--cyan);
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.quote-card p {
+    font-size: 1.1rem;
+    max-width: 780px;
+    margin: 12px auto;
+    color: #e4e5f4;
+}
+
+/* ICT QUIZ */
+
+.quiz-box {
+    max-width: 780px;
+    margin: auto;
+}
+
+.quiz-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    color: var(--cyan);
+    font-weight: 750;
+    margin-bottom: 20px;
+}
+
+.progress-track {
+    width: 100%;
+    height: 6px;
+    background: #ffffff13;
+    border-radius: 10px;
+    margin-bottom: 28px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--purple), var(--cyan));
+    transition: width .4s ease;
+}
+
+#question {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.answers {
+    display: grid;
+    gap: 12px;
+}
+
+.answer-btn {
+    background: #ffffff08;
+    border: 1px solid #ffffff20;
+    color: white;
+    text-align: left;
+    padding: 15px 18px;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+.answer-btn:hover:not(:disabled) {
+    border-color: var(--cyan);
+    background: #39e7ff0e;
+}
+
+.answer-btn:disabled {
+    cursor: default;
+}
+
+.answer-btn.correct {
+    border-color: var(--green);
+    background: #42e8a018;
+}
+
+.answer-btn.wrong {
+    border-color: #ff7777;
+    background: #ff777718;
+}
+
+#feedback {
+    margin: 18px 0;
+    min-height: 30px;
+    font-weight: 650;
+}
+
+.quiz-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+#nextBtn:disabled {
+    opacity: .4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#result {
+    text-align: center;
+    display: none;
+}
+
+#result .big-icon {
+    font-size: 4rem;
+}
+
+#result h2 {
+    margin-bottom: 10px;
+}
+
+/* FINAL SECTION */
+
+.final-card {
+    text-align: center;
+    background:
+        radial-gradient(ellipse at top, #a16bff20, transparent 65%),
+        linear-gradient(135deg, #a16bff12, #39e7ff0b);
+    border: 1px solid #a16bff50;
+    border-radius: 28px;
+    padding: 60px 28px;
+    position: relative;
+    overflow: hidden;
+}
+
+.final-card h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.25;
+    margin: 17px 0;
+}
+
+.final-card p {
+    max-width: 740px;
+    margin: 13px auto 25px;
+    color: #c6c9df;
+}
+
+.final-card h3 {
+    font-size: 1.4rem;
+}
+
+#celebrationMessage {
+    color: var(--cyan);
+    font-weight: 750;
+    min-height: 30px;
+    margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    border-top: 1px solid #ffffff13;
+    padding: 30px 15px;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+footer strong {
+    display: inline-block;
+    color: var(--cyan);
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-19px) rotate(8deg); }
+}
+
+@keyframes shine {
+    to { background-position: 200% center; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    nav {
+        padding: 17px 5%;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: .92rem;
+    }
+
+    nav .links {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: .77rem;
+    }
+
+    .hero {
+        min-height: 82vh;
+        padding: 75px 6%;
+    }
+
+    .hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .floating {
+        font-size: 1.7rem;
+    }
+
+    section.content {
+        padding: 70px 6%;
+    }
+
+    .appreciation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-card {
+        grid-column: auto;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .final-card {
+        padding: 45px 20px;
+    }
+
+    .quiz-controls {
+        align-items: stretch;
+    }
+
+    .quiz-controls .btn {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">GOLDENLINE<span>.</span></div>
+
+    <div class="links">
+        <a href="#about">Appreciation</a>
+        <a href="#quiz">ICT Quiz</a>
+        <a href="#final">Final Message</a>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero">
+
+    <div class="floating f1" aria-hidden="true">&lt;/&gt;</div>
+    <div class="floating f2" aria-hidden="true">💻</div>
+    <div class="floating f3" aria-hidden="true">⚡</div>
+    <div class="floating f4" aria-hidden="true">{ }</div>
+
+    <div class="badge">
+        ✦ A SPECIAL TEACHERS' DAY TRIBUTE ✦
+    </div>
+
+    <h1>
+        To Our Amazing Teacher,<br>
+        <span class="gradient-text">Mr James Nwanlozie</span>
+    </h1>
+
+    <p>
+        Today, we celebrate more than a teacher. We celebrate a mentor,
+        an inspiration, and someone who helps shape the minds and futures
+        of young people. This little corner of the internet was created
+        with gratitude, respect, and love just for you.
+    </p>
+
+    <div class="hero-buttons">
+        <button class="btn btn-primary"
+            onclick="scrollToSection('about')">
+            Discover Your Surprise ↓
+        </button>
+
+        <button class="btn btn-outline"
+            onclick="scrollToSection('quiz')">
+            Take the ICT Challenge ⚡
+        </button>
+    </div>
+
+    <div class="school-tag">Goldenline School · Teachers' Day</div>
+</header>
+
+<!-- APPRECIATION SECTION -->
+<section class="content" id="about">
+
+    <div class="section-heading">
+        <div class="eyebrow">With Gratitude and Respect</div>
+
+        <h2>
+            Celebrating <span class="gradient-text">You, Sir</span>
+        </h2>
+
+        <p>
+            Some lessons are written on a board. Others are written
+            in the hearts of the students who never forget their teachers.
+        </p>
+    </div>
+
+    <div class="appreciation-grid">
+
+        <article class="card">
+            <div class="big-icon">💡</div>
+            <h3>Thank You for Inspiring Us</h3>
+            <p>
+                Your lessons encourage us to think, ask questions,
+                explore new ideas, and discover what we are capable of.
+                Thank you for making learning meaningful.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="big-icon">💻</div>
+            <h3>Thank You for Teaching Us the Future</h3>
+            <p>
+                Through ICT, we learn about the technology that connects
+                our world. Your guidance helps us develop skills,
+                confidence, and ideas that we can carry into the future.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="big-icon">🤝</div>
+            <h3>Thank You for Your Patience</h3>
+            <p>
+                Learning something new takes time. Every explanation,
+                correction, and opportunity to try again can make a
+                difference. We appreciate the effort you put into teaching us.
+            </p>
+        </article>
+
+        <article class="card">
+            <div class="big-icon">🌟</div>
+            <h3>Thank You for Making a Difference</h3>
+            <p>
+                A teacher's influence reaches far beyond the classroom.
+                The knowledge and values students gain can stay with them
+                for years. Today, we honour the difference you make.
+            </p>
+        </article>
+
+        <article class="card full-card">
+            <div class="big-icon">💙</div>
+
+            <h3>A Heartfelt Message for Mr James Nwanlozie</h3>
+
+            <p>
+                Sir, we wanted to do something different this Teachers'
+                Day. Instead of giving you only a card, we decided to
+                create a little website dedicated to you. Every part of
+                this page is a small way of saying that your work and
+                commitment as a teacher are appreciated.
+            </p>
+
+            <br>
+
+            <button class="btn btn-primary" id="surpriseBtn"
+                onclick="revealSurprise()">
+                Open Your Special Message ✨
+            </button>
+
+            <div class="surprise" id="surprise" aria-live="polite">
+                <h3>Dear Mr James Nwanlozie, ❤️</h3>
+
+                <p>
+                    Happy Teachers' Day, Sir!
+                    <br><br>
+                    We may not always find the perfect words to express
+                    our gratitude, but today we want you to know how much
+                    we appreciate you.
+                    <br><br>
+                    Thank you for sharing your knowledge, for the time
+                    you dedicate to teaching, and for helping students
+                    learn and grow. Your subject is ICT, but the value
+                    of a good teacher goes far beyond any single subject.
+                    <br><br>
+                    We hope this little surprise brings a smile to your
+                    face and reminds you that the work you do matters.
+                    May you continue to find joy in teaching, strength
+                    in challenging moments, and fulfilment in seeing
+                    your students progress.
+                    <br><br>
+                    May this special day bring you happiness, appreciation,
+                    and the recognition you deserve.
+                    <br><br>
+                    With heartfelt gratitude and respect,
+                    <br>
+                    <strong>Daniel Iraoya and Precious Mmemme</strong>
+                    <br><br>
+                    Happy Teachers' Day, Sir! 🎉💙
+                </p>
+            </div>
+        </article>
+    </div>
+
+    <div class="quote-card">
+        <div class="quote-mark">“</div>
+
+        <p>
+            A great teacher does more than explain a lesson.
+            A great teacher helps students believe that there is
+            always something more to learn and something more they
+            can become.
+        </p>
+
+        <strong class="gradient-text">Dedicated to Mr James Nwanlozie</strong>
+    </div>
+
+</section>
+
+<!-- ICT QUIZ SECTION -->
+<section class="content" id="quiz">
+
+    <div class="section-heading">
+        <div class="eyebrow">Let's Have Some ICT Fun</div>
+
+        <h2>
+            The <span class="gradient-text">ICT Challenge</span>
+        </h2>
+
+        <p>
+            Sir, here is a little challenge in honour of your subject!
+            Students and teachers can test their knowledge with these
+            eight ICT questions.
+        </p>
+    </div>
+
+    <div class="card quiz-box">
+
+        <div id="quizGame">
+
+            <div class="quiz-top">
+                <span id="questionNumber">QUESTION 1 OF 8</span>
+                <span id="scoreLabel">Score: 0</span>
+            </div>
+
+            <div class="progress-track"
+                 role="progressbar"
+                 aria-label="Quiz progress"
+                 aria-valuemin="0"
+                 aria-valuemax="8"
+                 aria-valuenow="0"
+                 id="progressTrack">
+
+                <div class="progress-bar" id="progress"></div>
+            </div>
+
+            <h3 id="question">Loading question...</h3>
+
+            <div class="answers" id="answers"></div>
+
+            <div id="feedback" aria-live="polite"></div>
+
+            <div class="quiz-controls">
+                <span style="color:#bdc1d9;font-size:.85rem">
+                    Think carefully before choosing! 🧠
+                </span>
+
+                <button class="btn btn-primary"
+                    id="nextBtn"
+                    onclick="nextQuestion()"
+                    disabled>
+                    Next Question →
+                </button>
+            </div>
+        </div>
+
+        <div id="result" aria-live="polite">
+            <div class="big-icon" id="resultIcon">🏆</div>
+
+            <h2 id="resultTitle">Quiz Complete!</h2>
+
+            <p id="resultText"></p>
+
+            <br>
+
+            <button class="btn btn-primary" onclick="restartQuiz()">
+                Try Again ↻
+            </button>
+
+            <button class="btn btn-outline"
+                onclick="scrollToSection('final')">
+                Final Message 💙
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- FINAL TRIBUTE -->
+<section class="content" id="final">
+
+    <div class="final-card">
+
+        <div class="eyebrow">Goldenline School Celebrates You</div>
+
+        <div style="font-size:3rem;margin-top:20px"
+             aria-hidden="true">
+            🎉 💙 🌟
+        </div>
+
+        <h2>
+            Thank You, <span class="gradient-text">Mr Nwanlozie!</span>
+        </h2>
+
+        <p>
+            Dear Sir, as you celebrate this special day, we hope you
+            remember that the time you spend teaching is valuable and
+            the knowledge you share can open doors for your students.
+            Thank you for being part of our learning journey.
+        </p>
+
+        <h3>Happy Teachers' Day, Sir! 🎓</h3>
+
+        <p>
+            With appreciation from your students at Goldenline School.
+        </p>
+
+        <button class="btn btn-primary" onclick="celebrate()">
+            Celebrate Our Teacher 🎊
+        </button>
+
+        <p id="celebrationMessage" aria-live="polite"></p>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>Made with 💙, creativity, and appreciation.</p>
+
+    <p>
+        <strong>Made By Daniel Iraoya And Precious Mmemme</strong>
+    </p>
+
+    <p style="margin-top:8px;font-size:.8rem">
+        Goldenline School | Teachers' Day Celebration
+    </p>
+</footer>
+
+<script>
+/* =================================
+   GENERAL NAVIGATION
+================================= */
+
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+/* =================================
+   HEARTFELT SURPRISE MESSAGE
+================================= */
+
+function revealSurprise() {
+    const message = document.getElementById("surprise");
+    const button = document.getElementById("surpriseBtn");
+
+    message.classList.toggle("show");
+
+    const isOpen = message.classList.contains("show");
+
+    button.textContent = isOpen
+        ? "Hide Your Message ↑"
+        : "Open Your Special Message ✨";
+
+    if (isOpen) {
+        message.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest"
+        });
+    }
+}
+
+/* =================================
+   ICT QUIZ QUESTIONS
+================================= */
+
+const questions = [
+    {
+        q: "What does ICT stand for?",
+        options: [
+            "Internet Computer Technology",
+            "Information and Communication Technology",
+            "International Computing Tools",
+            "Integrated Circuit Transfer"
+        ],
+        answer: 1,
+        explanation:
+            "ICT means Information and Communication Technology."
+    },
+    {
+        q: "Which component is commonly called the brain of a computer?",
+        options: [
+            "Monitor",
+            "Keyboard",
+            "CPU",
+            "Mouse"
+        ],
+        answer: 2,
+        explanation:
+            "The CPU executes instructions and performs calculations."
+    },
+    {
+        q: "Which of these is an input device?",
+        options: [
+            "Monitor",
+            "Printer",
+            "Speaker",
+            "Keyboard"
+        ],
+        answer: 3,
+        explanation:
+            "A keyboard allows users to enter data and instructions."
+    },
+    {
+        q: "What is HTML primarily used for?",
+        options: [
+            "Structuring web page content",
+            "Manufacturing computer parts",
+            "Connecting power cables",
+            "Charging batteries"
+        ],
+        answer: 0,
+        explanation:
+            "HTML defines the structure and content of web pages."
+    },
+    {
+        q: "Which language is mainly used to style web pages?",
+        options: [
+            "CSS",
+            "SQL",
+            "Assembly",
+            "None of these"
+        ],
+        answer: 0,
+        explanation:
+            "CSS controls web page colours, layouts, fonts and appearance."
+    },
+    {
+        q: "Which of these is an operating system?",
+        options: [
+            "Google Search",
+            "Microsoft Windows",
+            "HTML",
+            "A keyboard"
+        ],
+        answer: 1,
+        explanation:
+            "Microsoft Windows is an operating system."
+    },
+    {
+        q: "What is the internet?",
+        options: [
+            "A single computer",
+            "A type of keyboard",
+            "A global network of connected networks",
+            "A computer screen"
+        ],
+        answer: 2,
+        explanation:
+            "The internet connects networks and devices around the world."
+    },
+    {
+        q: "Which practice helps protect an online account?",
+        options: [
+            "Sharing your password publicly",
+            "Using strong, unique passwords",
+            "Clicking every unknown link",
+            "Using one password for every account"
+        ],
+        answer: 1,
+        explanation:
+            "Strong, unique passwords help protect accounts from unauthorised access."
+    }
+];
+
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+
+/* =================================
+   LOAD QUESTIONS
+================================= */
+
+function loadQuestion() {
+    answered = false;
+
+    const item = questions[currentQuestion];
+
+    document.getElementById("questionNumber").textContent =
+        `QUESTION ${currentQuestion + 1} OF ${questions.length}`;
+
+    document.getElementById("scoreLabel").textContent =
+        `Score: ${score}`;
+
+    document.getElementById("question").textContent = item.q;
+
+    document.getElementById("feedback").textContent = "";
+
+    const progressTrack =
+        document.getElementById("progressTrack");
+
+    progressTrack.setAttribute(
+        "aria-valuenow",
+        currentQuestion
+    );
+
+    document.getElementById("progress").style.width =
+        `${(currentQuestion / questions.length) * 100}%`;
+
+    const answers = document.getElementById("answers");
+
+    answers.replaceChildren();
+
+    item.options.forEach((option, index) => {
+        const button = document.createElement("button");
+
+        button.className = "answer-btn";
+
+        button.textContent =
+            String.fromCharCode(65 + index) + ". " + option;
+
+        button.type = "button";
+
+        button.onclick = () => selectAnswer(index, button);
+
+        answers.appendChild(button);
+    });
+
+    const nextBtn = document.getElementById("nextBtn");
+
+    nextBtn.disabled = true;
+
+    nextBtn.textContent =
+        currentQuestion === questions.length - 1
+            ? "See My Results →"
+            : "Next Question →";
+}
+
+/* =================================
+   CHECK ANSWERS
+================================= */
+
+function selectAnswer(selected, selectedButton) {
+    if (answered) return;
+
+    answered = true;
+
+    const item = questions[currentQuestion];
+
+    const buttons = document.querySelectorAll(".answer-btn");
+
+    buttons.forEach(button => {
+        button.disabled = true;
+    });
+
+    const feedback = document.getElementById("feedback");
+
+    if (selected === item.answer) {
+        score++;
+
+        selectedButton.classList.add("correct");
+
+        feedback.textContent =
+            "✓ Correct! " + item.explanation;
+
+        feedback.style.color = "#42e8a0";
+
+    } else {
+        selectedButton.classList.add("wrong");
+
+        buttons[item.answer].classList.add("correct");
+
+        feedback.textContent =
+            "Not quite! " + item.explanation;
+
+        feedback.style.color = "#ffaaaa";
+    }
+
+    document.getElementById("scoreLabel").textContent =
+        `Score: ${score}`;
+
+    document.getElementById("progress").style.width =
+        `${((currentQuestion + 1) / questions.length) * 100}%`;
+
+    document.getElementById("progressTrack").setAttribute(
+        "aria-valuenow",
+        currentQuestion + 1
+    );
+
+    document.getElementById("nextBtn").disabled = false;
+}
+
+/* =================================
+   NEXT QUESTION
+================================= */
+
+function nextQuestion() {
+    if (!answered) return;
+
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
+        loadQuestion();
+    } else {
+        showResults();
+    }
+}
+
+/* =================================
+   QUIZ RESULTS
+================================= */
+
+function showResults() {
+    document.getElementById("quizGame").style.display = "none";
+
+    document.getElementById("result").style.display = "block";
+
+    document.getElementById("resultIcon").textContent =
+        score === questions.length ? "🏆" :
+        score >= 5 ? "🎉" : "💻";
+
+    document.getElementById("resultTitle").textContent =
+        score === questions.length ? "ICT Genius!" :
+        score >= 5 ? "Great Work!" : "Keep Learning!";
+
+    document.getElementById("resultText").textContent =
+        `You scored ${score} out of ${questions.length}. ` +
+        getResultMessage();
+
+    document.getElementById("progress").style.width = "100%";
+
+    document.getElementById("progressTrack").setAttribute(
+        "aria-valuenow",
+        questions.length
+    );
+}
+
+function getResultMessage() {
+    if (score === questions.length) {
+        return "A perfect score! Mr Nwanlozie would be proud!";
+    }
+
+    if (score >= 5) {
+        return "Well done! Keep building your ICT knowledge.";
+    }
+
+    return "Every expert starts as a learner. Review the answers and try again!";
+}
+
+/* =================================
+   RESTART QUIZ
+================================= */
+
+function restartQuiz() {
+    currentQuestion = 0;
+    score = 0;
+    answered = false;
+
+    document.getElementById("quizGame").style.display = "block";
+
+    document.getElementById("result").style.display = "none";
+
+    loadQuestion();
+
+    scrollToSection("quiz");
+}
+
+/* =================================
+   TEACHERS' DAY CELEBRATION
+================================= */
+
+function celebrate() {
+    const messages = [
+        "Mr Nwanlozie, you are appreciated! 💙",
+        "Thank you for inspiring young minds! 🌟",
+        "Great teachers help build brighter futures! 🚀",
+        "Today, we celebrate YOU, Sir! 🎉",
+        "Your dedication to teaching matters! 🏆",
+        "Happy Teachers' Day from Goldenline School! 🎓"
+    ];
+
+    const message = messages[
+        Math.floor(Math.random() * messages.length)
+    ];
+
+    document.getElementById("celebrationMessage").textContent =
+        message;
+
+    const symbols = ["🎉", "✨", "💙", "⭐", "🎊"];
+
+    // Respect reduced-motion settings.
+    if (window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    ).matches) {
+        return;
+    }
+
+    // Create a brief celebration effect.
+    for (let i = 0; i < 24; i++) {
+        const particle = document.createElement("span");
+
+        particle.textContent =
+            symbols[Math.floor(Math.random() * symbols.length)];
+
+        particle.setAttribute("aria-hidden", "true");
+
+        particle.style.position = "fixed";
+        particle.style.left = Math.random() * 100 + "vw";
+        particle.style.top = "-35px";
+        particle.style.fontSize =
+            (18 + Math.random() * 18) + "px";
+
+        particle.style.zIndex = "100";
+        particle.style.pointerEvents = "none";
+
+        particle.style.transition =
+            "top 2.5s ease-in, opacity 2.5s ease-in";
+
+        document.body.appendChild(particle);
+
+        requestAnimationFrame(() => {
+            particle.style.top =
+                (40 + Math.random() * 55) + "vh";
+
+            particle.style.opacity = "0";
+        });
+
+        setTimeout(() => {
+            particle.remove();
+        }, 2800);
+    }
+}
+
+/* =================================
+   START THE WEBSITE
+================================= */
+
+loadQuestion();
+
+</script>
+
+</body>
+</html>
