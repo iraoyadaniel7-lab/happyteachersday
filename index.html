@@ -5,14 +5,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080b1b">
-<meta name="description" content="A heartfelt Teachers' Day tribute to Mr James Nwanlozie of Goldenline School, made with appreciation by Daniel Iraoya and Precious Mmemme.">
+<meta name="description" content="A Teachers' Day tribute to Mr James Nwanlozie of Goldenline School, created by Iraoya Daniel on behalf of the entire SS3 class.">
+
 <title>Happy Teachers' Day, Mr James Nwanlozie! | Goldenline School</title>
 
 <style>
-/* =================================
-   GOLDENLINE SCHOOL - TEACHERS' DAY
-   HTML + CSS + JAVASCRIPT
-================================= */
+/* =====================================
+   GOLDENLINE SCHOOL TEACHERS' DAY
+   Created by Iraoya Daniel
+   On behalf of the entire SS3 class
+===================================== */
 
 * {
     margin: 0;
@@ -86,7 +88,7 @@ nav {
     gap: 20px;
     padding: 20px 8%;
     border-bottom: 1px solid #ffffff12;
-    background: #080b1beF;
+    background: #080b1bef;
     position: sticky;
     top: 0;
     z-index: 20;
@@ -177,6 +179,21 @@ nav a:hover {
     text-transform: uppercase;
     font-size: .8rem;
     margin-top: 23px;
+}
+
+.creator-tag {
+    display: inline-block;
+    margin-top: 27px;
+    padding: 12px 20px;
+    border-radius: 14px;
+    background: #39e7ff0b;
+    border: 1px solid #39e7ff40;
+    color: #e9eaff;
+    font-size: .92rem;
+}
+
+.creator-tag strong {
+    color: var(--cyan);
 }
 
 .hero-buttons {
@@ -279,7 +296,7 @@ section.content {
     box-shadow: 0 18px 45px #00000025;
 }
 
-/* TEACHER APPRECIATION */
+/* APPRECIATION */
 
 .appreciation-grid {
     display: grid;
@@ -327,8 +344,6 @@ section.content {
     color: #d9c3ff;
 }
 
-/* SPECIAL QUOTE */
-
 .quote-card {
     margin-top: 24px;
     text-align: center;
@@ -356,6 +371,16 @@ section.content {
 .quiz-box {
     max-width: 780px;
     margin: auto;
+}
+
+.quiz-notice {
+    color: #cfc4ff;
+    background: #a16bff12;
+    border: 1px solid #a16bff40;
+    padding: 13px 16px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    font-size: .9rem;
 }
 
 .quiz-top {
@@ -495,6 +520,46 @@ section.content {
     margin-top: 20px;
 }
 
+/* CREATOR CREDIT */
+
+.creator-section {
+    text-align: center;
+    padding: 65px 8%;
+    border-top: 1px solid #ffffff12;
+    background: linear-gradient(180deg, #a16bff09, #080b1b);
+}
+
+.creator-section .creator-label {
+    color: var(--cyan);
+    font-size: .76rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+.creator-section h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin: 12px 0;
+}
+
+.creator-section p {
+    color: var(--muted);
+    max-width: 700px;
+    margin: 0 auto 10px;
+}
+
+.creator-name {
+    display: inline-block;
+    margin: 20px 0 10px;
+    padding: 15px 24px;
+    border: 1px solid #39e7ff50;
+    background: #39e7ff0c;
+    border-radius: 14px;
+    font-size: 1.08rem;
+    font-weight: 800;
+    color: var(--cyan);
+}
+
 /* FOOTER */
 
 footer {
@@ -528,12 +593,13 @@ footer strong {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVENESS */
 
 @media (max-width: 700px) {
     nav {
         padding: 17px 5%;
         gap: 10px;
+        flex-wrap: wrap;
     }
 
     .logo {
@@ -542,6 +608,7 @@ footer strong {
 
     nav .links {
         gap: 12px;
+        flex-wrap: wrap;
     }
 
     nav a {
@@ -608,6 +675,7 @@ footer strong {
 <body>
 
 <!-- NAVIGATION -->
+
 <nav>
     <div class="logo">GOLDENLINE<span>.</span></div>
 
@@ -619,6 +687,7 @@ footer strong {
 </nav>
 
 <!-- HERO SECTION -->
+
 <header class="hero">
 
     <div class="floating f1" aria-hidden="true">&lt;/&gt;</div>
@@ -638,8 +707,8 @@ footer strong {
     <p>
         Today, we celebrate more than a teacher. We celebrate a mentor,
         an inspiration, and someone who helps shape the minds and futures
-        of young people. This little corner of the internet was created
-        with gratitude, respect, and love just for you.
+        of young people. This special website was created with gratitude,
+        respect, and appreciation just for you.
     </p>
 
     <div class="hero-buttons">
@@ -654,10 +723,19 @@ footer strong {
         </button>
     </div>
 
-    <div class="school-tag">Goldenline School · Teachers' Day</div>
+    <div class="school-tag">
+        Goldenline School · Teachers' Day
+    </div>
+
+    <div class="creator-tag">
+        Website created by <strong>Iraoya Daniel</strong><br>
+        <span>On behalf of the entire SS3 class</span>
+    </div>
+
 </header>
 
 <!-- APPRECIATION SECTION -->
+
 <section class="content" id="about">
 
     <div class="section-heading">
@@ -721,10 +799,9 @@ footer strong {
             <h3>A Heartfelt Message for Mr James Nwanlozie</h3>
 
             <p>
-                Sir, we wanted to do something different this Teachers'
-                Day. Instead of giving you only a card, we decided to
-                create a little website dedicated to you. Every part of
-                this page is a small way of saying that your work and
+                Sir, I wanted to create something different this Teachers'
+                Day on behalf of our entire SS3 class. This website is a
+                small way of saying that your work, dedication, and
                 commitment as a teacher are appreciated.
             </p>
 
@@ -761,12 +838,13 @@ footer strong {
                     <br><br>
                     With heartfelt gratitude and respect,
                     <br>
-                    <strong>Daniel Iraoya and Precious Mmemme</strong>
+                    <strong>Iraoya Daniel, on behalf of the entire SS3 class</strong>
                     <br><br>
                     Happy Teachers' Day, Sir! 🎉💙
                 </p>
             </div>
         </article>
+
     </div>
 
     <div class="quote-card">
@@ -779,12 +857,15 @@ footer strong {
             can become.
         </p>
 
-        <strong class="gradient-text">Dedicated to Mr James Nwanlozie</strong>
+        <strong class="gradient-text">
+            Dedicated to Mr James Nwanlozie
+        </strong>
     </div>
 
 </section>
 
-<!-- ICT QUIZ SECTION -->
+<!-- ICT QUIZ -->
+
 <section class="content" id="quiz">
 
     <div class="section-heading">
@@ -795,13 +876,18 @@ footer strong {
         </h2>
 
         <p>
-            Sir, here is a little challenge in honour of your subject!
-            Students and teachers can test their knowledge with these
-            eight ICT questions.
+            Think you know your ICT? Try this mini challenge.
+            New questions are randomly selected whenever the page loads.
         </p>
     </div>
 
     <div class="card quiz-box">
+
+        <div class="quiz-notice">
+            🔀 <strong>Random Challenge:</strong>
+            This quiz selects eight questions from a larger question bank.
+            The questions and answer choices are shuffled on each page load.
+        </div>
 
         <div id="quizGame">
 
@@ -851,7 +937,7 @@ footer strong {
             <br>
 
             <button class="btn btn-primary" onclick="restartQuiz()">
-                Try Again ↻
+                Try Another Quiz ↻
             </button>
 
             <button class="btn btn-outline"
@@ -864,6 +950,7 @@ footer strong {
 </section>
 
 <!-- FINAL TRIBUTE -->
+
 <section class="content" id="final">
 
     <div class="final-card">
@@ -889,7 +976,7 @@ footer strong {
         <h3>Happy Teachers' Day, Sir! 🎓</h3>
 
         <p>
-            With appreciation from your students at Goldenline School.
+            With appreciation from the entire SS3 class of Goldenline School.
         </p>
 
         <button class="btn btn-primary" onclick="celebrate()">
@@ -901,12 +988,44 @@ footer strong {
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    <p>Made with 💙, creativity, and appreciation.</p>
+<!-- PROMINENT CREATOR CREDIT -->
+
+<section class="creator-section" id="creator">
+
+    <div class="creator-label">The Person Behind This Website</div>
+
+    <h2>
+        Designed & Developed by
+    </h2>
+
+    <h2 class="gradient-text">
+        Iraoya Daniel
+    </h2>
+
+    <div class="creator-name">
+        💻 IRAOYA DANIEL
+    </div>
 
     <p>
-        <strong>Made By Daniel Iraoya And Precious Mmemme</strong>
+        This Teachers' Day website was designed and developed by
+        Iraoya Daniel as a special appreciation project on behalf
+        of the entire SS3 class of Goldenline School.
+    </p>
+
+    <p>
+        Created with HTML, CSS, JavaScript, creativity, and gratitude
+        to honour Mr James Nwanlozie.
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <p>Created with 💙, creativity, and appreciation.</p>
+
+    <p>
+        <strong>Made By Iraoya Daniel on behalf of the whole SS3 class</strong>
     </p>
 
     <p style="margin-top:8px;font-size:.8rem">
@@ -915,9 +1034,9 @@ footer strong {
 </footer>
 
 <script>
-/* =================================
+/* =====================================
    GENERAL NAVIGATION
-================================= */
+===================================== */
 
 function scrollToSection(id) {
     document.getElementById(id).scrollIntoView({
@@ -926,9 +1045,9 @@ function scrollToSection(id) {
     });
 }
 
-/* =================================
-   HEARTFELT SURPRISE MESSAGE
-================================= */
+/* =====================================
+   APPRECIATION MESSAGE
+===================================== */
 
 function revealSurprise() {
     const message = document.getElementById("surprise");
@@ -950,11 +1069,15 @@ function revealSurprise() {
     }
 }
 
-/* =================================
-   ICT QUIZ QUESTIONS
-================================= */
+/* =====================================
+   RANDOM ICT QUESTION BANK
 
-const questions = [
+   Eight questions are selected from
+   this larger bank on each page load.
+===================================== */
+
+const questionBank = [
+
     {
         q: "What does ICT stand for?",
         options: [
@@ -964,33 +1087,23 @@ const questions = [
             "Integrated Circuit Transfer"
         ],
         answer: 1,
-        explanation:
-            "ICT means Information and Communication Technology."
+        explanation: "ICT means Information and Communication Technology."
     },
+
     {
         q: "Which component is commonly called the brain of a computer?",
-        options: [
-            "Monitor",
-            "Keyboard",
-            "CPU",
-            "Mouse"
-        ],
+        options: ["Monitor", "Keyboard", "CPU", "Mouse"],
         answer: 2,
-        explanation:
-            "The CPU executes instructions and performs calculations."
+        explanation: "The CPU executes instructions and performs calculations."
     },
+
     {
         q: "Which of these is an input device?",
-        options: [
-            "Monitor",
-            "Printer",
-            "Speaker",
-            "Keyboard"
-        ],
+        options: ["Monitor", "Printer", "Speaker", "Keyboard"],
         answer: 3,
-        explanation:
-            "A keyboard allows users to enter data and instructions."
+        explanation: "A keyboard allows users to enter data and instructions."
     },
+
     {
         q: "What is HTML primarily used for?",
         options: [
@@ -1000,21 +1113,16 @@ const questions = [
             "Charging batteries"
         ],
         answer: 0,
-        explanation:
-            "HTML defines the structure and content of web pages."
+        explanation: "HTML defines the structure and content of web pages."
     },
+
     {
         q: "Which language is mainly used to style web pages?",
-        options: [
-            "CSS",
-            "SQL",
-            "Assembly",
-            "None of these"
-        ],
+        options: ["CSS", "SQL", "Assembly", "None of these"],
         answer: 0,
-        explanation:
-            "CSS controls web page colours, layouts, fonts and appearance."
+        explanation: "CSS controls web page colours, layouts, fonts and appearance."
     },
+
     {
         q: "Which of these is an operating system?",
         options: [
@@ -1024,9 +1132,9 @@ const questions = [
             "A keyboard"
         ],
         answer: 1,
-        explanation:
-            "Microsoft Windows is an operating system."
+        explanation: "Microsoft Windows is an operating system."
     },
+
     {
         q: "What is the internet?",
         options: [
@@ -1036,9 +1144,9 @@ const questions = [
             "A computer screen"
         ],
         answer: 2,
-        explanation:
-            "The internet connects networks and devices around the world."
+        explanation: "The internet connects networks and devices around the world."
     },
+
     {
         q: "Which practice helps protect an online account?",
         options: [
@@ -1048,18 +1156,388 @@ const questions = [
             "Using one password for every account"
         ],
         answer: 1,
-        explanation:
-            "Strong, unique passwords help protect accounts from unauthorised access."
+        explanation: "Strong, unique passwords help protect accounts from unauthorised access."
+    },
+
+    {
+        q: "Which device displays visual output from a computer?",
+        options: ["Monitor", "Microphone", "Scanner", "Joystick"],
+        answer: 0,
+        explanation: "A monitor displays text, images, video and other visual output."
+    },
+
+    {
+        q: "What does CPU stand for?",
+        options: [
+            "Computer Personal Utility",
+            "Central Processing Unit",
+            "Control Program Usage",
+            "Central Printing Utility"
+        ],
+        answer: 1,
+        explanation: "CPU stands for Central Processing Unit."
+    },
+
+    {
+        q: "Which of these is a web browser?",
+        options: ["Microsoft Excel", "Google Chrome", "Windows Explorer only", "PowerPoint"],
+        answer: 1,
+        explanation: "Google Chrome is a web browser used to access websites."
+    },
+
+    {
+        q: "What is the main function of RAM?",
+        options: [
+            "To store temporary working data",
+            "To print documents",
+            "To display images",
+            "To connect a computer to electricity"
+        ],
+        answer: 0,
+        explanation: "RAM temporarily stores data and programs that the computer is using."
+    },
+
+    {
+        q: "Which file extension is commonly used for an HTML file?",
+        options: [".mp3", ".jpg", ".html", ".exe"],
+        answer: 2,
+        explanation: "HTML documents commonly use the .html file extension."
+    },
+
+    {
+        q: "What is an algorithm?",
+        options: [
+            "A type of monitor",
+            "A step-by-step procedure for solving a problem",
+            "A computer virus",
+            "A storage device"
+        ],
+        answer: 1,
+        explanation: "An algorithm is a defined sequence of steps for solving a problem."
+    },
+
+    {
+        q: "Which of these is an example of secondary storage?",
+        options: ["RAM", "CPU register", "SSD", "Cache memory"],
+        answer: 2,
+        explanation: "An SSD stores data for longer-term use, even when power is off."
+    },
+
+    {
+        q: "What is phishing in cybersecurity?",
+        options: [
+            "A method of printing",
+            "A trick used to steal sensitive information",
+            "A way to improve screen brightness",
+            "A computer programming language"
+        ],
+        answer: 1,
+        explanation: "Phishing uses deceptive messages or websites to obtain sensitive information."
+    },
+
+    {
+        q: "Which of these is an example of application software?",
+        options: ["Microsoft Word", "A motherboard", "A power supply", "A processor socket"],
+        answer: 0,
+        explanation: "Microsoft Word is application software used to create documents."
+    },
+
+    {
+        q: "What is the purpose of a computer network?",
+        options: [
+            "To make computers heavier",
+            "To connect devices so they can communicate and share resources",
+            "To replace every operating system",
+            "To stop all data transfer"
+        ],
+        answer: 1,
+        explanation: "Networks allow connected devices to exchange data and share resources."
+    },
+
+    {
+        q: "Which number system uses only 0 and 1?",
+        options: ["Decimal", "Roman", "Binary", "Hexadecimal only"],
+        answer: 2,
+        explanation: "Binary is a base-2 number system using the digits 0 and 1."
+    },
+
+    {
+        q: "What does URL refer to?",
+        options: [
+            "Uniform Resource Locator",
+            "Universal Reading Language",
+            "User Reference List",
+            "Unified Router Link"
+        ],
+        answer: 0,
+        explanation: "A URL is the address used to locate a resource on the web."
+    },
+
+    {
+        q: "Which of these is a programming language?",
+        options: ["Python", "HDMI", "USB", "Wi-Fi"],
+        answer: 0,
+        explanation: "Python is a programming language used for many types of software."
+    },
+
+    {
+        q: "What is the purpose of a database?",
+        options: [
+            "To organise and manage data",
+            "To increase monitor size",
+            "To cool the CPU",
+            "To replace the keyboard"
+        ],
+        answer: 0,
+        explanation: "Databases store, organise, retrieve and manage data."
+    },
+
+    {
+        q: "Which HTML element creates a hyperlink?",
+        options: ["<p>", "<a>", "<h1>", "<table>"],
+        answer: 1,
+        explanation: "The HTML anchor element, <a>, creates hyperlinks."
+    },
+
+    {
+        q: "What does CSS stand for?",
+        options: [
+            "Computer Styling System",
+            "Cascading Style Sheets",
+            "Central Software Service",
+            "Creative Script Syntax"
+        ],
+        answer: 1,
+        explanation: "CSS stands for Cascading Style Sheets."
+    },
+
+    {
+        q: "Which of these is an output device?",
+        options: ["Mouse", "Scanner", "Microphone", "Printer"],
+        answer: 3,
+        explanation: "A printer produces output on paper."
+    },
+
+    {
+        q: "What is cloud computing?",
+        options: [
+            "Repairing clouds",
+            "Using remote computing resources over a network",
+            "Using a computer without software",
+            "A type of computer keyboard"
+        ],
+        answer: 1,
+        explanation: "Cloud computing provides computing services over a network, usually the internet."
+    },
+
+    {
+        q: "What is the main purpose of antivirus software?",
+        options: [
+            "To create presentations",
+            "To detect and help protect against malicious software",
+            "To increase desk space",
+            "To design computer cases"
+        ],
+        answer: 1,
+        explanation: "Antivirus software helps detect, block and remove malware."
+    },
+
+    {
+        q: "Which keyboard shortcut commonly copies selected text on Windows?",
+        options: ["Ctrl + C", "Ctrl + V", "Ctrl + Z", "Ctrl + P"],
+        answer: 0,
+        explanation: "Ctrl + C copies selected content."
+    },
+
+    {
+        q: "Which keyboard shortcut commonly pastes copied content on Windows?",
+        options: ["Ctrl + A", "Ctrl + X", "Ctrl + V", "Ctrl + S"],
+        answer: 2,
+        explanation: "Ctrl + V pastes copied or cut content."
+    },
+
+    {
+        q: "What does HTTP help a web browser do?",
+        options: [
+            "Communicate with web servers",
+            "Clean a keyboard",
+            "Charge a laptop",
+            "Increase RAM physically"
+        ],
+        answer: 0,
+        explanation: "HTTP is a protocol used to transfer web resources between clients and servers."
+    },
+
+    {
+        q: "What is a computer virus?",
+        options: [
+            "A type of computer monitor",
+            "Malicious code that can infect or alter files and systems",
+            "A computer language",
+            "A safe backup device"
+        ],
+        answer: 1,
+        explanation: "A computer virus is malicious code that can infect files or systems."
+    },
+
+    {
+        q: "Which of these is a search engine?",
+        options: ["Google Search", "Microsoft Word", "VLC Media Player", "Notepad"],
+        answer: 0,
+        explanation: "Google Search helps users find information on the web."
+    },
+
+    {
+        q: "What does GUI stand for?",
+        options: [
+            "General User Internet",
+            "Graphical User Interface",
+            "Global Utility Input",
+            "Graphics Unit Installation"
+        ],
+        answer: 1,
+        explanation: "A GUI lets users interact with a computer through visual elements."
+    },
+
+    {
+        q: "Which of these is a spreadsheet application?",
+        options: ["Microsoft Excel", "Microsoft Paint", "Notepad", "VLC"],
+        answer: 0,
+        explanation: "Microsoft Excel is spreadsheet software used to organise and analyse data."
+    },
+
+    {
+        q: "What is a backup?",
+        options: [
+            "An extra copy of data kept for recovery",
+            "A type of mouse",
+            "A computer screen",
+            "A website colour"
+        ],
+        answer: 0,
+        explanation: "Backups provide copies of data that can be restored if needed."
+    },
+
+    {
+        q: "Which of these is a strong online safety habit?",
+        options: [
+            "Sharing verification codes with strangers",
+            "Opening every attachment",
+            "Checking links before clicking",
+            "Posting passwords in public"
+        ],
+        answer: 2,
+        explanation: "Checking links carefully helps you avoid suspicious websites and scams."
+    },
+
+    {
+        q: "What is the main purpose of JavaScript on a website?",
+        options: [
+            "To add interactive behaviour",
+            "To manufacture the monitor",
+            "To replace the internet connection",
+            "To supply electricity to the computer"
+        ],
+        answer: 0,
+        explanation: "JavaScript can make web pages interactive and respond to user actions."
+    },
+
+    {
+        q: "Which of these is a storage measurement unit?",
+        options: ["Kilogram", "Gigabyte", "Centimetre", "Litre"],
+        answer: 1,
+        explanation: "A gigabyte is a unit used to measure digital data storage."
+    },
+
+    {
+        q: "What is the purpose of an IP address?",
+        options: [
+            "To identify a device or network interface for communication",
+            "To increase the computer's physical size",
+            "To style a website",
+            "To print a document"
+        ],
+        answer: 0,
+        explanation: "IP addresses help identify network interfaces for internet protocol communication."
+    },
+
+    {
+        q: "What does open-source software generally mean?",
+        options: [
+            "Software whose source code is available under an open-source licence",
+            "Software that can only work offline",
+            "Software with no code",
+            "Software that must always be paid for"
+        ],
+        answer: 0,
+        explanation: "Open-source licences allow source code to be accessed and used under specified conditions."
+    },
+
+    {
+        q: "What is two-factor authentication?",
+        options: [
+            "Using two monitors",
+            "Using two different kinds of verification to help confirm identity",
+            "Typing a password twice into any website",
+            "Creating two usernames"
+        ],
+        answer: 1,
+        explanation: "Two-factor authentication uses two different types of verification."
     }
+
 ];
 
+/* =====================================
+   SHUFFLE AND SELECT QUESTIONS
+
+   Fisher-Yates shuffle randomises arrays.
+   Questions and their answer choices are
+   shuffled independently for every new quiz.
+===================================== */
+
+function shuffleArray(array) {
+    const shuffled = [...array];
+
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+
+        [shuffled[i], shuffled[j]] =
+            [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled;
+}
+
+function prepareQuiz() {
+    // Select eight different questions from the bank.
+    const selectedQuestions = shuffleArray(questionBank).slice(0, 8);
+
+    // Shuffle answer choices while preserving the correct answer.
+    return selectedQuestions.map(question => {
+        const shuffledOptions = shuffleArray(
+            question.options.map((text, index) => ({
+                text,
+                isCorrect: index === question.answer
+            }))
+        );
+
+        return {
+            q: question.q,
+            options: shuffledOptions.map(option => option.text),
+            answer: shuffledOptions.findIndex(option => option.isCorrect),
+            explanation: question.explanation
+        };
+    });
+}
+
+let questions = prepareQuiz();
 let currentQuestion = 0;
 let score = 0;
 let answered = false;
 
-/* =================================
-   LOAD QUESTIONS
-================================= */
+/* =====================================
+   LOAD A QUESTION
+===================================== */
 
 function loadQuestion() {
     answered = false;
@@ -1073,33 +1551,27 @@ function loadQuestion() {
         `Score: ${score}`;
 
     document.getElementById("question").textContent = item.q;
-
     document.getElementById("feedback").textContent = "";
-
-    const progressTrack =
-        document.getElementById("progressTrack");
-
-    progressTrack.setAttribute(
-        "aria-valuenow",
-        currentQuestion
-    );
 
     document.getElementById("progress").style.width =
         `${(currentQuestion / questions.length) * 100}%`;
 
-    const answers = document.getElementById("answers");
+    document.getElementById("progressTrack").setAttribute(
+        "aria-valuenow",
+        currentQuestion
+    );
 
+    const answers = document.getElementById("answers");
     answers.replaceChildren();
 
     item.options.forEach((option, index) => {
         const button = document.createElement("button");
 
         button.className = "answer-btn";
+        button.type = "button";
 
         button.textContent =
             String.fromCharCode(65 + index) + ". " + option;
-
-        button.type = "button";
 
         button.onclick = () => selectAnswer(index, button);
 
@@ -1116,9 +1588,9 @@ function loadQuestion() {
             : "Next Question →";
 }
 
-/* =================================
+/* =====================================
    CHECK ANSWERS
-================================= */
+===================================== */
 
 function selectAnswer(selected, selectedButton) {
     if (answered) return;
@@ -1126,14 +1598,12 @@ function selectAnswer(selected, selectedButton) {
     answered = true;
 
     const item = questions[currentQuestion];
-
     const buttons = document.querySelectorAll(".answer-btn");
+    const feedback = document.getElementById("feedback");
 
     buttons.forEach(button => {
         button.disabled = true;
     });
-
-    const feedback = document.getElementById("feedback");
 
     if (selected === item.answer) {
         score++;
@@ -1147,7 +1617,6 @@ function selectAnswer(selected, selectedButton) {
 
     } else {
         selectedButton.classList.add("wrong");
-
         buttons[item.answer].classList.add("correct");
 
         feedback.textContent =
@@ -1170,9 +1639,9 @@ function selectAnswer(selected, selectedButton) {
     document.getElementById("nextBtn").disabled = false;
 }
 
-/* =================================
+/* =====================================
    NEXT QUESTION
-================================= */
+===================================== */
 
 function nextQuestion() {
     if (!answered) return;
@@ -1186,13 +1655,12 @@ function nextQuestion() {
     }
 }
 
-/* =================================
-   QUIZ RESULTS
-================================= */
+/* =====================================
+   RESULTS
+===================================== */
 
 function showResults() {
     document.getElementById("quizGame").style.display = "none";
-
     document.getElementById("result").style.display = "block";
 
     document.getElementById("resultIcon").textContent =
@@ -1206,13 +1674,6 @@ function showResults() {
     document.getElementById("resultText").textContent =
         `You scored ${score} out of ${questions.length}. ` +
         getResultMessage();
-
-    document.getElementById("progress").style.width = "100%";
-
-    document.getElementById("progressTrack").setAttribute(
-        "aria-valuenow",
-        questions.length
-    );
 }
 
 function getResultMessage() {
@@ -1224,30 +1685,29 @@ function getResultMessage() {
         return "Well done! Keep building your ICT knowledge.";
     }
 
-    return "Every expert starts as a learner. Review the answers and try again!";
+    return "Every expert starts as a learner. Try another random quiz!";
 }
 
-/* =================================
-   RESTART QUIZ
-================================= */
+/* =====================================
+   TRY A NEW RANDOM QUIZ
+===================================== */
 
 function restartQuiz() {
+    questions = prepareQuiz();
     currentQuestion = 0;
     score = 0;
     answered = false;
 
     document.getElementById("quizGame").style.display = "block";
-
     document.getElementById("result").style.display = "none";
 
     loadQuestion();
-
     scrollToSection("quiz");
 }
 
-/* =================================
-   TEACHERS' DAY CELEBRATION
-================================= */
+/* =====================================
+   CELEBRATION EFFECT
+===================================== */
 
 function celebrate() {
     const messages = [
@@ -1266,16 +1726,14 @@ function celebrate() {
     document.getElementById("celebrationMessage").textContent =
         message;
 
-    const symbols = ["🎉", "✨", "💙", "⭐", "🎊"];
-
-    // Respect reduced-motion settings.
     if (window.matchMedia(
         "(prefers-reduced-motion: reduce)"
     ).matches) {
         return;
     }
 
-    // Create a brief celebration effect.
+    const symbols = ["🎉", "✨", "💙", "⭐", "🎊"];
+
     for (let i = 0; i < 24; i++) {
         const particle = document.createElement("span");
 
@@ -1305,15 +1763,13 @@ function celebrate() {
             particle.style.opacity = "0";
         });
 
-        setTimeout(() => {
-            particle.remove();
-        }, 2800);
+        setTimeout(() => particle.remove(), 2800);
     }
 }
 
-/* =================================
+/* =====================================
    START THE WEBSITE
-================================= */
+===================================== */
 
 loadQuestion();
 
